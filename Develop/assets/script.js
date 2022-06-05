@@ -16,6 +16,10 @@ $(".saveBtn").on("click", function () {
   console.log(time, value);
 });
 
+// Getting From LocalStorage
+
+$("#9am-row .description").val(localStorage.getItem("9am-row"));
+
 //Color Code Blocks
 var hour9 = 9;
 var hour10 = 10;
