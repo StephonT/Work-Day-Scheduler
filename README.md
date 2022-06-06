@@ -14,4 +14,4 @@ This Work Day Scheduler will allow users to plan their work day accordingly at e
 
 Click the link below to use the Work Day Scheduler
 
-<a href="https://stephont.github.io/Work-Day-Scheduler/"> Work Schedule Planner</a>
+<a href="https://stephont.github.io/Work-Day-Scheduler/"> Work Day Scheduler</a>
