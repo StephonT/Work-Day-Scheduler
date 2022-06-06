@@ -16,9 +16,11 @@ $(".saveBtn").on("click", function () {
   console.log(time, value);
 });
 
-// Getting From LocalStorage
+// Saved Events Persist
 
 $("#9am-row .description").val(localStorage.getItem("9am-row"));
+$("#10am-row .description").val(localStorage.getItem("10am-row"));
+$("#11am-row .description").val(localStorage.getItem("11am-row"));
 
 //Color Code Blocks
 var hour9 = 9;
