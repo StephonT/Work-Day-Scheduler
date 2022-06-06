@@ -1,3 +1,5 @@
+//Display Current Day
+
 var displayDate = document.querySelector("#currentDay");
 
 var currentTime = moment();
@@ -21,6 +23,12 @@ $(".saveBtn").on("click", function () {
 $("#9am-row .description").val(localStorage.getItem("9am-row"));
 $("#10am-row .description").val(localStorage.getItem("10am-row"));
 $("#11am-row .description").val(localStorage.getItem("11am-row"));
+$("#12pm-row .description").val(localStorage.getItem("12pm-row"));
+$("#1pm-row .description").val(localStorage.getItem("1pm-row"));
+$("#2pm-row .description").val(localStorage.getItem("2pm-row"));
+$("#3pm-row .description").val(localStorage.getItem("3pm-row"));
+$("#4pm-row .description").val(localStorage.getItem("4pm-row"));
+$("#5pm-row .description").val(localStorage.getItem("5pm-row"));
 
 //Color Code Blocks
 var hour9 = 9;
@@ -62,6 +70,7 @@ if (currentHour < hour11) {
   $("#11am-text").addClass("present");
 }
 
+//12pm
 if (currentHour < hour12) {
   $("#12pm-text").addClass("future");
 } else if (currentHour > hour12) {
@@ -70,6 +79,7 @@ if (currentHour < hour12) {
   $("#12pm-text").addClass("present");
 }
 
+//1pm
 if (currentHour < hour1) {
   $("#1pm-text").addClass("future");
 } else if (currentHour > hour1) {
@@ -78,6 +88,7 @@ if (currentHour < hour1) {
   $("#1pm-text").addClass("present");
 }
 
+//2pm
 if (currentHour < hour2) {
   $("#2pm-text").addClass("future");
 } else if (currentHour > hour2) {
@@ -86,6 +97,7 @@ if (currentHour < hour2) {
   $("#2pm-text").addClass("present");
 }
 
+//3pm
 if (currentHour < hour3) {
   $("#3pm-text").addClass("future");
 } else if (currentHour > hour3) {
@@ -94,6 +106,7 @@ if (currentHour < hour3) {
   $("#3pm-text").addClass("present");
 }
 
+//4pm
 if (currentHour < hour4) {
   $("#4pm-text").addClass("future");
 } else if (currentHour > hour4) {
@@ -102,6 +115,7 @@ if (currentHour < hour4) {
   $("#4pm-text").addClass("present");
 }
 
+//5pm
 if (currentHour < hour5) {
   $("#5pm-text").addClass("future");
 } else if (currentHour > hour5) {
